@@ -20,3 +20,28 @@
 }
 // reset
 
+ul{
+  list-style-type: none;
+}
+
+.btn{
+  padding: 14px 34px;
+
+  border-radius: 35px;
+
+  text-align: center;
+}
+
+.btn.primary{
+  border: 1px solid #ffdfed;
+}
+
+.btn.secondary{
+  font-weight: normal;
+
+  color: black;
+
+  background-color: #ffdfed;
+}
+
+
