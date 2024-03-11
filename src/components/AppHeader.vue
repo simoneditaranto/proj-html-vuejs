@@ -49,6 +49,8 @@ export default {
 
 <style scoped lang="scss">
 @use '../styles/variables' as *;
+@use '../styles/mixins' as *;
+
 header{
     color: white;
 
@@ -67,6 +69,7 @@ header{
         display: flex;
         flex-direction: column;
         align-items: center;
+        /*@inlcude centered;*/
         gap: 30px;
 
         position: relative;
@@ -88,6 +91,7 @@ header{
             position: absolute;
             right: 0;
         }
+
     }
 }
 

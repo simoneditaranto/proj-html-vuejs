@@ -34,6 +34,8 @@ export default {
 </template>
 
 <style scoped lang="scss">
+@use '../styles/mixins' as *;
+
 nav{
     padding: 20px 0;
     margin-bottom: 85px;
@@ -41,9 +43,7 @@ nav{
     color: white;
 
     #nav-container{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+        @include centered-between;
 
         margin: 0 auto;
 
