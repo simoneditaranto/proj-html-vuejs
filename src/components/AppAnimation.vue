@@ -1,23 +1,25 @@
 <script>
 
 export default {
-    name: 'AppFooter',
+    name: 'AppAnimation',
 }
 
 </script>
 
 <template>
 
-    <footer>
+    <section id="our-animation">
 
-    </footer>
+        
+
+    </section>
 
 </template>
 
 <style scoped lang="scss">
 
-footer{
-    height: 250px;
+#our-animation{
+    height: 800px;
     /* test */
 }
 

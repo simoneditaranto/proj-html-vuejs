@@ -17,7 +17,6 @@ export default {
 
 <template>
   
-  <h1>Titolo</h1>
   <AppHeader></AppHeader>
   <AppMain></AppMain>
   <AppFooter></AppFooter>
@@ -25,9 +24,5 @@ export default {
 </template>
 
 <style scoped lang="scss">
-
-h1 {
-  color: red;
-}
 
 </style>
