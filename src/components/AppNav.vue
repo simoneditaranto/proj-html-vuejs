@@ -38,11 +38,13 @@ export default {
 @use '../styles/mixins' as *;
 
 nav{
+    position: relative;
+
     padding: 20px 0;
-    margin-bottom: 85px;
 
     color: white;
 
+    z-index: 1;
     #nav-container{
         @include centered-between;
 
