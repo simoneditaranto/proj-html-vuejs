@@ -10,19 +10,61 @@ export default {
 
     <section id="our-works">
 
-        
+        <div class="titles">
+
+            <h3>Our Works</h3>
+
+            <h2>Featured Production</h2>
+
+            <p>
+                Here's just a small sample of some of those project that we're qulte proud of. If you are looking for something specific feel free to get in contact with us. 
+            </p>
+
+        </div>
+
+        <div class="cards-works container">
+
+            <div class="card" v-for="n in 4">
+                <img src="/img/work1.png" alt="">
+            </div>
+
+        </div>
+
+        <div class="btn">
+            See Our Work
+        </div>
 
     </section>
 
 </template>
 
 <style scoped lang="scss">
+@use '../styles/mixins' as *;
+@use '../styles/variables' as *;
 
 #our-works{
-    height: 800px;
-    border: 3px dotted black;
-    background-color: rgba(0, 0, 0, 0.1);
-    /* test */
+@include centered;
+flex-direction: column;
+
+    padding-top: 120px;
+
+    .cards-works{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+
+        .card{
+            width: calc(100% / 2 - 20px / 2 * 1);
+
+            img{
+                width: 100%;
+            }
+        }
+    }
+
+    .btn{
+        border: 1px solid $tertiaryColor;
+    }
 }
 
 </style>

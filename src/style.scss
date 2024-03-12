@@ -1,3 +1,6 @@
+@use './styles/variables' as *;
+@use './styles/mixins' as *;
+
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -42,6 +45,26 @@ ul{
   color: black;
 
   background-color: #ffdfed;
+}
+
+
+.titles{
+  @include centered;
+  flex-direction: column;
+  gap: 20px;
+  margin-bottom: 50px;
+
+  text-align: center;
+
+  h3{
+      color: $secondaryColor;
+  }
+
+  h2{
+      font-size: 3em;
+
+      color: $primaryColor;
+  }
 }
 
 .container {
