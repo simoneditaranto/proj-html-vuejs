@@ -20,7 +20,7 @@ export default {
             Owner and Creative Director
         </div>
 
-        <div class="member-socials">
+        <div class="socials">
             <div class="square">
                 <i class="fa-brands fa-facebook-f"></i>
             </div>
@@ -67,26 +67,6 @@ export default {
         color: #311852;
     }
 
-    .member-socials{
-        display: flex;
-        gap: 20px;
-
-        color: #311852;
-
-        .square{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-
-            width: 45px;
-            height: 45px;
-
-            border: 1px solid grey;
-            border-radius: 50%;
-
-            background-color: white;
-        }
-    }
 
 }
 

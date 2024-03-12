@@ -66,7 +66,7 @@ export default {
         
         margin: 0 auto;
         
-        width: 70%;
+        width: 50%;
 
         input{
             padding: 26px 10px;

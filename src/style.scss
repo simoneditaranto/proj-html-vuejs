@@ -84,6 +84,27 @@ ul{
   }
 }
 
+.socials{
+  display: flex;
+  gap: 20px;
+
+  color: #311852;
+
+  .square{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      width: 45px;
+      height: 45px;
+
+      border: 1px solid grey;
+      border-radius: 50%;
+
+      background-color: white;
+  }
+}
+
 .container {
   max-width: 1320px;
   margin: 0 auto;
