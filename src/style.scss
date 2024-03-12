@@ -67,6 +67,23 @@ ul{
   }
 }
 
+.arrows {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  margin-top: 20px;
+
+  color: grey;
+
+  i:not(.fa-circle){ 
+      padding: 10px;
+
+      border: 1px solid grey;
+      border-radius: 50%;
+  }
+}
+
 .container {
   max-width: 1320px;
   margin: 0 auto;

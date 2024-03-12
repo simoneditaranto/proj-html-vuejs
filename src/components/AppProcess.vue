@@ -124,21 +124,6 @@ export default {
             }
         }
 
-        .arrows {
-            display: flex;
-            gap: 10px;
-
-            margin-top: 20px;
-
-            color: grey;
-
-            i{ 
-                padding: 10px;
-
-                border: 1px solid grey;
-                border-radius: 50%;
-            }
-        }
     }
 
 }
