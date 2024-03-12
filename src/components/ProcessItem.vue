@@ -14,6 +14,15 @@ export default {
 
     <div class="card">
 
+    <div class="notification">
+        <div class="rectangle">
+
+        </div>
+        <div class="circle">
+            <span>{{ itemProcess.numberNot }}</span>
+        </div>
+    </div>
+
     <div class="card-logo">
 
         <img :src="itemProcess.url" alt="">
@@ -30,12 +39,15 @@ export default {
 
 <style scoped lang="scss">
 @use '../styles/variables' as *;
+@use '../styles/mixins' as *;
 
 .card{
     display: flex;
     align-items: center;
     flex-direction: column;
     gap: 25px;
+
+    position: relative;
 
     padding: 30px 35px;
 
@@ -45,6 +57,32 @@ export default {
     border-radius: 20px;
 
     text-align: center;
+
+    .notification{
+        position: absolute;
+        top: 0;
+        right: 20px;
+
+        .rectangle{
+            width: 45px;
+            height: 80px;
+    
+            background-color: #f7f0ff;
+        }
+        
+        .circle{
+            @include centered;
+
+            width: 45px;
+            height: 45px;
+
+            transform: translateY(-50%);
+
+            border-radius: 50%;
+
+            background-color: #f7f0ff;
+        }
+    }
 
     .card-logo{
         padding: 30px;

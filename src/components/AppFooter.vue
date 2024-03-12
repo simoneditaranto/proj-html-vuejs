@@ -80,6 +80,10 @@ footer{
             ul{
                 display: flex;
                 gap: 20px;
+
+                li{
+                    font-weight: bold;
+                }
             }
         }
     }

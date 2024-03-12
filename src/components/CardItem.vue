@@ -12,7 +12,7 @@ export default {
 
 <template>
 
-    <div class="card col-4">
+    <div class="card" :class="itemCard.color">
         
         <div class="card-icon">
             <img :src="itemCard.url" alt="">
@@ -32,13 +32,14 @@ export default {
 
 <style scoped lang="scss">
 @use '../styles/variables' as *;
+@use '../styles/mixins' as *;
 
 .card{
-    display: flex;
+    @include centered;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     gap: 30px;
+
+    width: calc(100% / 3 - 24px / 3 * 2);
 
     padding: 30px 15px;
 
@@ -49,13 +50,24 @@ export default {
         font-size: 1.3em;
         font-weight: bold;
 
-        /*color: $primaryColor;*/
-        color: #311852;
+        color: $primaryColor;
     }
 
     .card-text{
         text-align: center;
     }
+}
+
+.card.first{
+    background-color: #FEF4EB;
+}
+
+.card.second{
+    background-color: #EEECFA;
+}
+
+.card.third{
+    background-color: #FFEAEC;
 }
 
 </style>

@@ -10,18 +10,21 @@ export const store = reactive({
             url: '/img/smart1.png',
             title: '3D Modelling',
             text: 'We constantly ask questions. It helps us shape your story and deliver the results you crave. Yep, well drill deep to deliver above and beyond your expectatlons.',
+            color: 'first',
         },
 
         {
             url: '/img/smart2.png',
             title: 'Collaboration',
             text: 'We constantly ask questions. It helps us shape your story and deliver the results you crave. Yep, well drill deep to deliver above and beyond your expectatlons.',
+            color: 'second',
         },
 
         {
             url: '/img/smart3.png',
             title: 'Creativity',
             text: 'We constantly ask questions. It helps us shape your story and deliver the results you crave. Yep, well drill deep to deliver above and beyond your expectatlons.',
+            color: 'third',
         },
 
     ],
@@ -50,12 +53,14 @@ export const store = reactive({
             url: '/img/process1.png',
             title: 'Pre-Production',
             text: 'Well take your idea and create a techincal script which consists of action notes and animation descriptions',
+            numberNot: 4,
         },
 
         {
             url: '/img/process2.png',
             title: 'Scripting',
             text: 'Well take your idea and create a techincal script which consists of action notes and animation descriptions',
+            numberNot: 1,
         },
 
     ],

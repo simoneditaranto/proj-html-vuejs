@@ -23,13 +23,13 @@ export default {
 
     <section id="our-animation">
 
-        <!-- <div class="smart-img">
+        <div class="smart-img">
                 <img src="/img/smart.png" alt="" >
-        </div> -->
+        </div>
         
         <div class="container">
 
-            <div class="col-7 offset-3 titles">
+            <div class="titles">
 
                 <h3>Our Love for Animation</h3>
         
@@ -41,7 +41,7 @@ export default {
 
             </div>
 
-            <div class="cards col-8 offset-3">
+            <div class="cards">
                 <CardItem 
                     v-for="currentCard in this.store.animationCards"
                     :itemCard="currentCard"
@@ -66,13 +66,16 @@ export default {
     padding-bottom: 135px;
 
     .container{
-        z-index: 2;
+        padding-left: 300px;
 
         .titles{
             @include centered;
             flex-direction: column;
             gap: 20px;
+
             margin-bottom: 50px;
+
+            width: 80%;
     
             text-align: center;
     
@@ -91,8 +94,6 @@ export default {
         .cards{
             display: flex;
             gap: 24px;
-    
-            z-index: 0;
         }
     }
 
@@ -102,10 +103,8 @@ export default {
         position: absolute;
         left: 0;
 
-        width: 650px;
-        height: 100%;
-        
-        z-index: 0;
+        width: 450px;
+        height: 800px;
         
         img{
             width: 100%;
