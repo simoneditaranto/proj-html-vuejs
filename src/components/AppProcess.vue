@@ -1,7 +1,20 @@
 <script>
+import { store } from '../store.js';
+
+import ProcessItem from './ProcessItem.vue';
 
 export default {
     name: 'AppProcess',
+
+    components: {
+        ProcessItem,
+    },
+
+    data() {
+        return {
+            store,
+        }
+    }
 }
 
 </script>
@@ -28,19 +41,12 @@ export default {
             </div>
 
             <div class="process-cards">
-                <div class="card" v-for="n in 2">
+                <ProcessItem
+                    v-for="currentProcess in this.store.processCards"
+                    :itemProcess="currentProcess"
+                >
 
-                    <div class="card-logo">
-
-                        <img src="/img/process2.png" alt="">
-
-                    </div>
-
-                    <h4>Pre-Production</h4>
-
-                    <p>We'll take your idea and create a techincal script which consists of action notes and animation descriptions</p>
-
-                </div>
+                </ProcessItem>
             </div>
 
             <div class="arrows">
@@ -79,49 +85,7 @@ export default {
             flex-wrap: wrap;
             gap: 10px;
 
-            .card{
-                display: flex;
-                align-items: center;
-                flex-direction: column;
-                gap: 25px;
-
-                padding: 30px 35px;
-
-                width: calc(100% / 2 - 10px / 2 * 1);
-
-                border: 1px solid #f7f0ff;
-                border-radius: 20px;
-
-                text-align: center;
-
-                .card-logo{
-                    padding: 30px;
-
-                    width: 130px;
-                    height: 130px;
-                    
-                    background-color: #FEF5F0;
-
-                    border-radius: 50%;
-
-                    img{
-                        width: 100%;
-                        height: 100%;
-                    }
-                }
-
-                h4 {
-                    font-size: 1.5em;
-
-                    color: $primaryColor;
-                }
-
-                p{
-                    padding: 0 30px;
-                }
-
-
-            }
+            
         }
 
     }

@@ -1,11 +1,18 @@
 <script>
+import { store } from '../store.js';
 
 export default {
     name: 'AppNav',
 
     props: {
         linkName: String,
-    }
+    },
+
+    data() {
+        return {
+            store,
+        }
+    },
 }
 
 </script>
@@ -18,13 +25,7 @@ export default {
             <img src="/img/logo.png" alt="logo">
 
             <ul>
-                <li>Testo</li>
-                <li>Testo</li>
-                <li>Testo</li>
-                <li>Testo</li>
-                <li>Testo</li>
-                <li>Testo</li>
-                <li>Testo</li>
+                <li v-for="currentLink in this.store.headerLinks"> {{ currentLink }} </li>
                 <li class="btn secondary">Get a Quote</li>
             </ul>
 

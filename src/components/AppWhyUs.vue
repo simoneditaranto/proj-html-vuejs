@@ -23,7 +23,7 @@ export default {
             </p>
 
             <div class="container brands">
-                <img src="/img/sponsor5.png" alt="" v-for="n in 5" class="brand">
+                <img :src="`/img/sponsor${n}.png`" alt="" v-for="n in 5" class="brand">
             </div>
 
         </div>

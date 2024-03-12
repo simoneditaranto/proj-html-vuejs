@@ -1,4 +1,6 @@
 <script>
+import { store } from '../store.js';
+
 import CardItem from './CardItem.vue';
 
 export default {
@@ -6,6 +8,12 @@ export default {
 
     components: {
         CardItem,
+    },
+
+    data() {
+        return {
+            store,
+        }
     }
 }
 
@@ -34,7 +42,11 @@ export default {
             </div>
 
             <div class="cards col-8 offset-3">
-                <CardItem v-for="n in 3"></CardItem>
+                <CardItem 
+                    v-for="currentCard in this.store.animationCards"
+                    :itemCard="currentCard"
+                >
+                </CardItem>
             </div>
 
         </div>

@@ -25,7 +25,7 @@ export default {
         <div class="cards-works container">
 
             <div class="card" v-for="n in 4">
-                <img src="/img/work1.png" alt="">
+                <img :src="`/img/work${n}.png`" alt="">
             </div>
 
         </div>
@@ -52,6 +52,8 @@ flex-direction: column;
         display: flex;
         flex-wrap: wrap;
         gap: 20px;
+
+        margin-bottom: 40px;
 
         .card{
             width: calc(100% / 2 - 20px / 2 * 1);

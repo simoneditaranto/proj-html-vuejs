@@ -2,6 +2,10 @@
 
 export default {
     name: 'CardItem',
+
+    props: {
+        itemCard: Object,
+    }
 }
 
 </script>
@@ -11,15 +15,15 @@ export default {
     <div class="card col-4">
         
         <div class="card-icon">
-            <img src="/img/smart1.png" alt="">
+            <img :src="itemCard.url" alt="">
         </div>
 
         <div class="card-title">
-            3D Modelling
+            {{ itemCard.title }}
         </div>
 
         <div class="card-text">
-            We constantly ask questions. It helps us shape your story and deliver the results you crave. Yep, we'll drill deep to deliver above and beyond your expectatlons.
+            {{ itemCard.text }}
         </div>
         
     </div>

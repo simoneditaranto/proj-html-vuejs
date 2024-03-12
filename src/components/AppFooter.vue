@@ -1,7 +1,14 @@
 <script>
+import { store } from '../store.js';
 
 export default {
     name: 'AppFooter',
+
+    data() {
+        return {
+            store,
+        }
+    },
 }
 
 </script>
@@ -17,11 +24,11 @@ export default {
             <div class="links">
 
                 <ul>
-                    <li>testo</li>
-                    <li>testo</li>
-                    <li>testo</li>
-                    <li>testo</li>
-                    <li>testo</li>
+                    <li 
+                        v-for="currentLink in this.store.footerLinks"
+                    >
+                        {{ currentLink }}
+                    </li>
                 </ul>
 
             </div>

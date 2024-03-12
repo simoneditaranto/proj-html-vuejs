@@ -1,4 +1,6 @@
 <script>
+import { store } from '../store';
+
 import CounterItem from './CounterItem.vue';
 
 export default {
@@ -6,6 +8,12 @@ export default {
 
     components: {
         CounterItem,
+    },
+
+    data() {
+        return {
+            store,
+        }
     }
 }
 
@@ -20,7 +28,11 @@ export default {
             <h2>Anidio Quick Facts</h2>
 
             <div class="counter-cards">
-                <CounterItem v-for="n in 4"></CounterItem>
+                <CounterItem 
+                    v-for="currentCounter in this.store.staticsCounter"
+                    :itemCounter="currentCounter"
+                >
+                </CounterItem>
             </div>
 
         </div>

@@ -1,4 +1,6 @@
 <script>
+import { store } from '../store.js';
+
 import MemberItem from './MemberItem.vue';
 
 export default {
@@ -6,6 +8,12 @@ export default {
 
     components: {
         MemberItem,
+    },
+
+    data() {
+        return {
+            store,
+        }
     }
 }
 
@@ -36,7 +44,11 @@ export default {
         </div>
 
         <div class="team-members container">
-            <MemberItem v-for="n in 3"></MemberItem>
+            <MemberItem 
+                v-for="currentMember in this.store.teamMembers"
+                :itemMember="currentMember"
+            >
+            </MemberItem>
             <div class="arrows">
                 <i class="fa-solid fa-arrow-left"></i>
                

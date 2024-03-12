@@ -2,6 +2,10 @@
 
 export default {
     name: 'MembersItem',
+
+    props: {
+        itemMember: Object,
+    },
 }
 
 </script>
@@ -10,14 +14,14 @@ export default {
 
     <div class="member-card">
 
-        <img src="/img/team1.png" alt="">
+        <img :src="itemMember.memberImage" alt="">
 
         <div class="member-name">
-            Robert Coleman
+            {{ itemMember.name }}
         </div>
 
         <div class="member-role">
-            Owner and Creative Director
+            {{ itemMember.role }}
         </div>
 
         <div class="socials">

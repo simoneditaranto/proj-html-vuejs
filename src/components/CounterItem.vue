@@ -2,6 +2,10 @@
 
 export default {
     name: 'CounterItem',
+
+    props: {
+        itemCounter: Object,
+    },
 }
 
 </script>
@@ -10,11 +14,11 @@ export default {
 
     <div class="counter-card">
         <div class="counter-number">
-            700+
+            {{itemCounter.number}}+
         </div>
 
         <div class="counter-type">
-            Project done
+            {{itemCounter.referenceTo}}
         </div>
     </div>
 
