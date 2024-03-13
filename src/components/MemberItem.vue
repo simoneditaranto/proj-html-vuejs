@@ -68,10 +68,16 @@ export default {
         height: 200px;
 
         transform: translateY(-50px);
+
+        transition: .2s ease;
         
         img{
             width: 100%;
             height: 100%;
+        }
+
+        &:hover {
+            transform: translateY(-40px);
         }
     }
 

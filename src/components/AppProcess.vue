@@ -72,9 +72,18 @@ export default {
     .process-image{
         transform: translateX(-30%);
 
+        transition: all 0.5s ease;
+
         img{
             width: 100%;
+            height: 100%;
+            object-fit: contain;
         }
+        &:hover{
+            transform: translateX(0);
+
+        }
+
 
     }
 

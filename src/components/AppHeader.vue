@@ -28,10 +28,9 @@ export default {
             
             <img src="/img/dots-right.png" alt="" class="dots-right">
             <img src="/img/dots-left.png" alt="" class="dots-left">
-            <img src="/img/globe1.png" alt="" class="globe-1">
+            <img src="/img/globe1.png" alt="" class="globe-1 rotation">
             <img src="/img/light.png" alt="" class="light">
-            <img src="/img/globe2.png" alt="" class="globe-2">
-            <img src="/img/globe3.png" alt="" class="globe-3">
+            <img src="/img/globe2.png" alt="" class="globe-2 rotation">
 
             <div class="secondary-titles">
                 <h3>Imagine, Create, Experience</h3>
@@ -63,11 +62,12 @@ export default {
             </div>
         </div>
         
-        <!-- <div class="shape-bottom">
+        <div class="shape-bottom">
     
-            <img src="/img/shape-bottom.png" alt="">
+            <img src="/img/bottom-shape.png" alt="">
     
-        </div> -->
+        </div>
+
     </header>
 
     
@@ -86,6 +86,18 @@ header{
 
     background-image: url('/img/banner-bg.png');
     background-size: cover;
+
+    .shape-bottom{
+        position: absolute;
+        bottom: -10px;
+        width: 100%;
+
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
 
     #jumbo{
         display: flex;
@@ -140,12 +152,11 @@ header{
             width: 90px;
         }
 
-        .globe-3{
-            position: absolute;
-            top: -65%;
-            left: 35%;
-
-            width: 250px;
+        .rotation{
+            animation-name: rotation;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
         }
 
         .light{
@@ -157,10 +168,20 @@ header{
         .left-man{
             position: absolute;
             left: 0;
+
+            animation-name: movement;
+            animation-duration: 8s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
         }
         .right-man{
             position: absolute;
             right: 0;
+
+            animation-name: movement;
+            animation-duration: 8s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
         }
 
     }
@@ -170,6 +191,8 @@ header{
         top: 105%;
         left: 50%;
         transform: translate(-50%, -50%);
+
+        z-index: 2;
 
         .thumb-video{
             position: relative;
@@ -200,5 +223,46 @@ header{
         }
     }
     
+}
+
+@keyframes movement {
+    0% {
+        top: 50px;
+    }
+
+    25%{
+        top: 100px;
+    }
+
+    50%{
+        top: 150px;
+    }
+
+    75% {
+        top: 100px;
+    }
+
+    100%{
+        top: 50px;
+    }
+}
+
+@keyframes rotation{
+    0%{
+        rotate: 0deg;
+    }
+
+    25%{
+        rotate: 90deg;
+    }
+
+    50%{
+        rotate: 180deg;
+    }
+
+
+    100%{
+        rotate: 360deg;
+    }
 }
 </style>

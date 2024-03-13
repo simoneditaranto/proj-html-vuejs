@@ -21,6 +21,8 @@ export default {
 
     <nav>
         <div id="nav-container">
+
+            <img src="/img/globe3.png" alt="" class="globe-3">
         
             <img src="/img/logo.png" alt="logo">
 
@@ -45,7 +47,12 @@ nav{
 
     color: white;
 
-    z-index: 1;
+    .globe-3{
+        position: absolute;
+        top: -250px;
+        left: 30%;
+    }
+
     #nav-container{
         @include centered-between;
 
@@ -59,6 +66,8 @@ nav{
             gap: 20px;
 
             font-weight: bold;
+
+            z-index: 1;
 
             li{
                 font-family: Chakra Petch, sans-serif;
