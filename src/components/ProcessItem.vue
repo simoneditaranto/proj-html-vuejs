@@ -51,7 +51,7 @@ export default {
 
     padding: 30px 35px;
 
-    width: calc(100% / 2 - 10px / 2 * 1);
+    width: calc(100% / 2 - $processGap / 2 * 1);
 
     border: 1px solid #f7f0ff;
     border-radius: 20px;

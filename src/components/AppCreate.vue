@@ -10,7 +10,7 @@ export default {
 
     <section id="create">
 
-        <div class="titles">
+        <div class="secondary-titles">
 
             <h3>
                 We Create New Worlds!
@@ -44,22 +44,6 @@ export default {
 
     background-image: url('/img/preloader.png');
     background-size: cover;
-
-    .titles {
-        
-        h3{
-            color: $fourthColor;
-        }
-
-        h2{
-            color: white;
-        }
-
-        p{
-            color: white;
-        }
-
-    }
 
     .register{
         position: relative;

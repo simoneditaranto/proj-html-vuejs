@@ -48,7 +48,7 @@ ul{
 }
 
 
-.titles{
+.primary-titles{
   @include centered;
   flex-direction: column;
   gap: 20px;
@@ -64,6 +64,29 @@ ul{
       font-size: 3em;
 
       color: $primaryColor;
+  }
+}
+
+.secondary-titles{
+  @include centered;
+  flex-direction: column;
+  gap: 20px;
+  margin-bottom: 50px;
+
+  text-align: center;
+
+  h3{
+      color: $fourthColor;
+  }
+
+  h2{
+    color: white;
+
+    font-size: 3em;
+  }
+
+  p{
+    color: white;
   }
 }
 
@@ -108,4 +131,8 @@ ul{
 .container {
   max-width: 1320px;
   margin: 0 auto;
+}
+
+h1, h2, h3, h4{
+  font-family: Chakra Petch, sans-serif;
 }

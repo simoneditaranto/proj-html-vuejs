@@ -42,6 +42,7 @@ export default {
 </template>
 
 <style scoped lang="scss">
+@use '../styles/variables' as *;
 
 #our-counter{
     padding: 75px 0;
@@ -63,7 +64,7 @@ export default {
 
         .counter-cards{
             display: flex;
-            gap: 25px;
+            gap: $counterGap;
 
             width: 100%;
         }

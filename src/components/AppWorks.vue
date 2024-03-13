@@ -10,7 +10,7 @@ export default {
 
     <section id="our-works">
 
-        <div class="titles">
+        <div class="primary-titles">
 
             <h3>Our Works</h3>
 
@@ -51,12 +51,12 @@ flex-direction: column;
     .cards-works{
         display: flex;
         flex-wrap: wrap;
-        gap: 20px;
+        gap: $worksGap;
 
         margin-bottom: 40px;
 
         .card{
-            width: calc(100% / 2 - 20px / 2 * 1);
+            width: calc(100% / 2 - $worksGap / 2 * 1);
 
             img{
                 width: 100%;

@@ -23,14 +23,19 @@ export default {
 
     <section id="our-team">
 
-        <!-- <div class="shapes">
-            <img src="/img/shape.png" alt="">
-            <img src="/img/shape2.png" alt="">
-        </div> -->
+        <!-- <img src="/img/shape.png" alt="">
+        <img src="/img/shape2.png" alt=""> -->
+
+        <div class="back-1">
+
+        </div>
+        <div class="back-2">
+            
+        </div>
 
         <img src="/img/smart4.png" alt="">
 
-        <div class="titles">
+        <div class="primary-titles">
             <h3>
                 Anidio Magic Team Members
             </h3>
@@ -64,20 +69,33 @@ export default {
 </template>
 
 <style scoped lang="scss">
+@use '../styles/variables' as *;
 
 #our-team{
     position: relative;
 
     padding-top: 135px;
 
-    /*.shapes{
+    .back-1{
+        position: absolute;    
+        top: 220px;
+
+        width: 50%;
+        height: 100%;
+
+        background-image: url('/img/shape.png');
+        background-size: cover;
+        background-repeat: round;
+    }
+
+    .back-2{
+        width: 50%;
+        height: 100%;
+        background-image: url('/img/shape2.png');
+        background-size: cover;
         position: absolute;
-        top: 0;
         right: 0;
-        img{
-            width: 100%;
-        }
-    }*/
+    }
 
     img{
         position: absolute;
@@ -89,11 +107,18 @@ export default {
         object-fit: contain;
     }
 
+    .primary-titles{
+        padding-bottom: 100px;
+        margin-bottom: 0;
+    }
+
     .team-members{
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        gap: 20px;
+        gap: $membersGap;
+
+        z-index: 1;
 
         .arrows{
 

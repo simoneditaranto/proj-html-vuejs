@@ -28,7 +28,7 @@ export default {
         </div>
 
         <div class="process-container">
-            <div class="titles">
+            <div class="primary-titles">
                 <h3>Our Process</h3>
 
                 <h2>
@@ -83,7 +83,7 @@ export default {
         .process-cards{
             display: flex;
             flex-wrap: wrap;
-            gap: 10px;
+            gap: $processGap;
 
             
         }

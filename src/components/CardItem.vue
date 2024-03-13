@@ -39,7 +39,7 @@ export default {
     flex-direction: column;
     gap: 30px;
 
-    width: calc(100% / 3 - 24px / 3 * 2);
+    width: calc(100% / 3 - $cardGap / 3 * 2);
 
     padding: 30px 15px;
 

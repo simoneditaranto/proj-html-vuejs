@@ -10,7 +10,7 @@ export default {
 
     <section id="why-us">
 
-        <div class="titles">
+        <div class="primary-titles">
 
             <h3>Why Anidio studio?</h3>
 
@@ -33,17 +33,18 @@ export default {
 </template>
 
 <style scoped lang="scss">
+@use '../styles/variables' as *;
 
 #why-us{
-    padding-top: 135px;
+    padding-top: 250px;
 
     .brands{
         display: flex;
         flex-wrap: wrap;
-        gap: 20px;
+        gap: $sponsorGap;
 
         .brand {
-            width: calc(100% / 5 - 20px / 5 * 4);
+            width: calc(100% / 5 - $sponsorGap / 5 * 4);
         }
     }
 }

@@ -29,7 +29,7 @@ export default {
         
         <div class="container">
 
-            <div class="titles">
+            <div class="primary-titles">
 
                 <h3>Our Love for Animation</h3>
         
@@ -68,32 +68,16 @@ export default {
     .container{
         padding-left: 300px;
 
-        .titles{
-            @include centered;
-            flex-direction: column;
-            gap: 20px;
-
+        .primary-titles{
             margin-bottom: 50px;
 
             width: 80%;
-    
-            text-align: center;
-    
-            h3{
-                color: $secondaryColor;
-            }
-    
-            h2{
-                font-size: 3em;
-    
-                color: $primaryColor;
-            }
         }
     
     
         .cards{
             display: flex;
-            gap: 24px;
+            gap: $cardGap;
         }
     }
 

@@ -34,14 +34,16 @@ export default {
 
     padding: 45px 20px;
 
-    width: calc(100% / 4 - 25px / 4 * 3);
+    width: calc(100% / 4 - $counterGap / 4 * 3);
     
     border-radius: 20px;
     
     border: 1px solid rgba(255, 255, 255, 0.3);
 
     .counter-number{
-        font-size: 2.5em;
+        font-family: Chakra Petch, sans-serif;
+
+        font-size: 3.7em;
         font-weight: bold;
     }
 

@@ -33,7 +33,7 @@ export default {
             <img src="/img/globe2.png" alt="" class="globe-2">
             <img src="/img/globe3.png" alt="" class="globe-3">
 
-            <div class="titles">
+            <div class="secondary-titles">
                 <h3>Imagine, Create, Experience</h3>
     
                 <h1>We Animate With Ninja-Like Precision</h1>
@@ -97,16 +97,12 @@ header{
 
         position: relative;
 
-        .titles{
+        .secondary-titles{
             width: 50%;
 
 
             h1{
-                font-size: 3em;
-            }
-            
-            h3{
-                color: $fourthColor;
+                font-size: 4.5em;
             }
 
             .jumbo-buttons{
@@ -171,7 +167,7 @@ header{
 
     .video-intro{
         position: absolute;
-        top: 100%;
+        top: 105%;
         left: 50%;
         transform: translate(-50%, -50%);
 
