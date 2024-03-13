@@ -35,6 +35,7 @@ export default {
 </template>
 
 <style scoped lang="scss">
+@use '../styles/variables' as *;
 @use '../styles/mixins' as *;
 
 nav{
@@ -58,6 +59,19 @@ nav{
             gap: 20px;
 
             font-weight: bold;
+
+            li{
+                font-family: Chakra Petch, sans-serif;
+                font-size: 1.1em;
+
+                cursor: pointer;
+
+                transition: all 0.4s;
+
+                &:hover:not(&:last-child){
+                    color: $fourthColor;
+                }
+            }
         }
     }
 }

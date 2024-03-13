@@ -59,11 +59,11 @@ export default {
 }
 
 .card.first{
-    background-color: #FEF4EB;
+    background-color: $sevenColor;
 }
 
 .card.second{
-    background-color: #EEECFA;
+    background-color: $fiveColor;
 }
 
 .card.third{

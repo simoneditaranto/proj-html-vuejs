@@ -62,6 +62,7 @@ export default {
 </template>
 
 <style scoped lang="scss">
+@use '../styles/variables' as *;
 @use '../styles/mixins' as *;
 
 footer{
@@ -82,7 +83,16 @@ footer{
                 gap: 20px;
 
                 li{
-                    font-weight: bold;
+                    font-family: Chakra Petch, sans-serif;
+                    font-weight: 600;
+
+                    cursor: pointer;
+
+                    transition: all 0.3s;
+
+                    &:hover{
+                        color: $primaryColor
+                    }
                 }
             }
         }
